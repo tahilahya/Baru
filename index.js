@@ -23,7 +23,7 @@ async function startWhatsAppClient() {
     
     waClient = makeWASocket({
         logger: pino({ level: 'silent' }),
-        printQRInTerminal: false,
+        printQRInTerminal: true,
         auth: state,
         browser: ["Mac OS", "Safari", "10.15.7"]
     });
